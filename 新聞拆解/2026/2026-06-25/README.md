@@ -1,43 +1,43 @@
 # 2026-06-25 新聞拆解索引
 
 檢索時間：2026-06-25 Asia/Taipei  
-工作目標：從近 24–48 小時內的經濟、AI、AMR、科技與產業新聞中，挑選最多 4 篇作為「文章結構與第一性原理」拆解樣本。
+工作目標：從近 24–48 小時內的經濟、AI、AMR、科技與產業新聞中，分成「台灣新聞」與「國外新聞」建立文章結構與第一性原理拆解樣本。台灣新聞每天最多 3 篇；國外新聞若有價值每天最多 2 篇。
 
 ## 今日入選
 
-### 1. Europe’s extreme heat is shutting down power plants
+### 國外新聞
 
-- 來源：MIT Technology Review
+#### 1. Europe’s extreme heat is shutting down power plants
+
+- 文章出處：[MIT Technology Review｜Europe’s extreme heat is shutting down power plants](https://www.technologyreview.com/2026/06/24/1139676/europe-heat-power-plants/)
 - 作者：Casey Crownhart
 - 日期：2026-06-24
-- URL：https://www.technologyreview.com/2026/06/24/1139676/europe-heat-power-plants/
 - 筆記：[`01-歐洲熱浪讓電廠成為氣候風險界面.md`](./01-歐洲熱浪讓電廠成為氣候風險界面.md)
 - 入選理由：這篇把熱浪從「天氣事件」拆成電力系統的雙向壓力：需求側冷房用電上升，供給側核電、燃氣、水力受冷卻與水文條件限制。它是很好的第一性原理樣本，因為文章真正討論的是基礎設施背後的環境假設何時失效。
 
-### 2. Europe is pushing back on Washington's chip war
+#### 2. Europe is pushing back on Washington's chip war
 
-- 來源：TechCrunch
+- 文章出處：[TechCrunch｜Europe is pushing back on Washington's chip war](https://techcrunch.com/2026/06/24/europe-is-pushing-back-on-washingtons-chip-war/)
 - 作者：Connie Loizos
 - 日期：2026-06-25T00:08:36+00:00
-- URL：https://techcrunch.com/2026/06/24/europe-is-pushing-back-on-washingtons-chip-war/
 - 筆記：[`02-歐洲反推華府晶片戰.md`](./02-歐洲反推華府晶片戰.md)
 - 入選理由：篇幅短，但濃縮了出口管制、盟友協調、ASML 瓶頸地位與中國市場依賴。它適合拆解「brief 如何用少量材料呈現地緣經濟衝突」，也能抽象成出口管制的三方成本模型。
 
-### 3. 新漢攻AI機器人 功能安全控制器Q4量產
+### 台灣新聞
 
-- 來源：自由財經
+#### 1. 新漢攻AI機器人 功能安全控制器Q4量產
+
+- 文章出處：[自由財經｜新漢攻AI機器人 功能安全控制器Q4量產](https://ec.ltn.com.tw/article/breakingnews/5482530)
 - 作者：方韋傑
 - 日期：2026-06-24 15:09
-- URL：https://ec.ltn.com.tw/article/breakingnews/5482530
 - 筆記：[`03-新漢攻-ai-機器人功能安全控制器.md`](./03-新漢攻-ai-機器人功能安全控制器.md)
 - 入選理由：這篇把 AI 機器人從概念題材拉回落地瓶頸：運動控制、功能安全、資安與認證。它適合拆解「最後一哩路」供應鏈位置如何被財經新聞寫成量產與訂單敘事。
 
-### 4. 能率集團轉投資有成 Agility Robotics將於美股掛牌
+#### 2. 能率集團轉投資有成 Agility Robotics將於美股掛牌
 
-- 來源：聯合新聞網／經濟日報
+- 文章出處：[聯合新聞網／經濟日報｜能率集團轉投資有成 Agility Robotics將於美股掛牌](https://udn.com/news/story/7240/9585811)
 - 作者：陳昱翔
 - 日期：2026-06-24 15:24
-- URL：https://udn.com/news/story/7240/9585811
 - 筆記：[`04-agility-robotics-掛牌與人形機器人資本化.md`](./04-agility-robotics-掛牌與人形機器人資本化.md)
 - 入選理由：這篇把 Agility Robotics 掛牌事件轉成台灣供應鏈與轉投資敘事，很適合拆解「新興科技如何從技術故事變成資本市場估值故事」。
 
