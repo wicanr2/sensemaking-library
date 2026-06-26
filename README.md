@@ -28,8 +28,8 @@
 
 ### 論文拆解
 
-- 最新日期：[2026-06-25](./論文拆解/2026/2026-06-25/README.md)
-- 近期：[Learning Action Priors for Cross-embodiment Robot Manipulation](./論文拆解/2026/2026-06-25/01-learning-action-priors-cross-embodiment-robot-manipulation.md)
+- 最新日期：[2026-06-26](./論文拆解/2026/2026-06-26/README.md)
+- 近期：[Why Multi-Step Tool-Use Reinforcement Learning Collapses and How Supervisory Signals Fix It](./論文拆解/2026/2026-06-26/01-why-multi-step-tool-use-rl-collapses.md)
 
 ### 近期快速連結（一個月內）
 
