@@ -1,7 +1,7 @@
 # 2026-06-28 文章拆解
 
-- [Jarsy、RWA 私募股權與 Hermes GPT：把「不可觸及的資產」接到一般人的操作介面](./01-jarsy-rwa私募股權與hermes-gpt.md)
-  - 原文：[INSIDE｜打破資本高牆、重塑私募市場規則！Jarsy 運用 RWA 代幣化推動 AI 時代投資民主](https://www.inside.com.tw/article/41609-Jarsy)
+- [Hermes GPT v0.3.0、MCP 與「突破 Codex 配額」敘事：一篇 AI 科技新聞如何把工具整合寫成趨勢故事](./01-hermes-gpt-mcp與codex配額敘事.md)
+  - 原文：INSIDE「Hermes GPT v0.3.0：透過 MCP 把本地模型接進 ChatGPT，突破 Codex 配額限制」（使用者貼文全文）
   - 並讀：[GitHub｜asimons81/hermes-gpt](https://github.com/asimons81/hermes-gpt)
-  - 主題：RWA、pre-IPO 私募股權、投資民主化、MCP sidecar、高風險能力介面化。
+  - 主題：MCP、Hermes GPT、Hermes Agent、Codex 配額、本地模型敘事、開放協議、AI 科技新聞事實校準。
 

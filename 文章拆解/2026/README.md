@@ -2,7 +2,7 @@
 
 ## 2026-06-28
 
-- [Jarsy、RWA 私募股權與 Hermes GPT：把「不可觸及的資產」接到一般人的操作介面](./2026-06-28/01-jarsy-rwa私募股權與hermes-gpt.md)
+- [Hermes GPT v0.3.0、MCP 與「突破 Codex 配額」敘事](./2026-06-28/01-hermes-gpt-mcp與codex配額敘事.md)
 
 ## 2026-06-25
 
