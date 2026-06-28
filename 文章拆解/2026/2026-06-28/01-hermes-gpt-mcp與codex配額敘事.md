@@ -299,6 +299,64 @@ AI 工具常常有三層：
 
 MCP 的長期意義在這裡，不是單純避開某個 API 的限制。
 
+## 額外討論：高通自製 CPU 對 MTK 的衝擊
+
+這個討論表面上跟 Hermes GPT 無關，但放在同一篇筆記裡有一個共通主題：**當平台開始掌握底層能力，競爭就會從單點規格變成控制面與可替換性的競爭。**
+
+高通把 Oryon 自製 CPU 帶進 Snapdragon 8 Elite，對聯發科的衝擊不只是「某一代跑分誰高」。比較準確的拆法是三層：CPU 微架構、SoC 整合敘事、終端品牌採購心理。
+
+### 相關新聞與資料
+
+- [Qualcomm Oryon CPU 官方頁](https://www.qualcomm.com/processors/oryon)：高通把 Oryon 描述為自研、可跨 PC、手機、車用等平台調整的 CPU 架構，重點是效能、功耗與可依平台客製。
+- [9to5Google：Snapdragon 8 Elite has Oryon CPU for notable performance and efficiency gains](https://9to5google.com/2024/10/21/qualcomm-snapdragon-8-elite/)：指出 Snapdragon 8 Elite 把 Oryon 帶進 Android 手機，採 2 個 Prime + 6 個 Performance cores，沒有 efficiency cores；高通宣稱 CPU 單核與多核效能比 Snapdragon 8 Gen 3 提升 45%，CPU 功耗效率提升 44%。
+- [Android Authority：Snapdragon 8 Elite deep dive](https://www.androidauthority.com/snapdragon-8-elite-deep-dive-3491526/)：把 Snapdragon 8 Elite 稱為高通回到自製 CPU 的重大轉向；文章也提醒，自製微架構帶來差異化，但伴隨更高開發成本與熱/功耗驗證壓力。
+- [MediaTek Dimensity 9400 官方頁](https://www.mediatek.com/products/smartphones/mediatek-dimensity-9400)：聯發科主打全大核 CPU、Arm Cortex-X925、AI、影像與遊戲能力，代表它仍採 Arm 公版/半客製核心路線來拚旗艦。
+- [Android Authority：Dimensity 9400 遊戲實測](https://www.androidauthority.com/gaming-on-mediatek-dimensity-9400-3510050/)：實測認為 Dimensity 9400 與 Snapdragon 8 Elite 在實際遊戲中差距很小，甚至在熱與長時間穩定性上不必然輸；這提醒我們不能只用高通自製 CPU 敘事直接推論 MTK 立即失勢。
+- [硬是要學：Snapdragon 8 Elite 與天璣 9400 跑分比較](https://www.soft4fun.net/tech/news/snapdragon-8-elite-vs-dimensity-9400.htm)：中文科技媒體也把兩者放在同一個旗艦對位框架裡，顯示市場已把「高通 Oryon 自製 CPU vs 聯發科天璣全大核」當成下一輪旗艦手機 SoC 故事線。
+
+### 衝擊一：高通把競爭從 Arm 公版核心拉回「自有微架構」
+
+過去 Android 旗艦 SoC 的 CPU 競爭，很大一部分是誰能把 Arm 最新 Cortex 核心、台積電製程、cache、排程、散熱與 OEM 調校組合得更好。這對 MTK 有利，因為只要執行力、成本與上市節奏夠強，就能在同一條 Arm IP 供應鏈上追近甚至反超。
+
+Oryon 的風險在於：高通重新取得一個 MTK 不能直接採購的差異化槓桿。若 Oryon 後續幾代真的在單核、延遲、功耗曲線與跨裝置軟體最佳化上拉開差距，MTK 會被迫在「採用 Arm 最新核心」之外，再回答一個問題：為什麼公版核心路線仍足以支撐旗艦溢價？
+
+這不代表 MTK 立刻被打垮。Dimensity 9400 的實測顯示，在遊戲等真實工作負載下，它仍能接近 Snapdragon 8 Elite；但高通已經把戰場重新命名成「自製 CPU 能力」，這會影響品牌端與投資人對技術護城河的想像。
+
+### 衝擊二：MTK 的優勢會更集中在整體 SoC、成本與上市節奏
+
+如果高通用 Oryon 拉高 CPU 敘事，MTK 的反制不一定是也做自製 CPU。更現實的路徑可能是：
+
+1. **全大核 + Arm 最新 IP 的快速整合**：用 Cortex-X925 / 後續 X 系列核心維持高階 CPU 表現。
+2. **熱與續航的真實體驗**：如果高通峰值高但部分手機偏熱，MTK 可以用穩定幀率、長時間遊戲與功耗控制搶回話語權。
+3. **價格與 OEM 採用彈性**：中國品牌若能用天璣做出接近高通旗艦的體驗，且成本/供貨/合作條件更好，MTK 仍有很強位置。
+4. **AI、影像、連線與週邊整合**：手機 SoC 不是只有 CPU。NPU、ISP、modem、Wi-Fi、相機 pipeline、遊戲 SDK 與 Android 調校，都會共同決定 OEM 選擇。
+
+換句話說，高通自製 CPU 對 MTK 的壓力，是把「CPU 峰值與技術自主性」變成更醒目的評分項；MTK 的反擊，會是把討論拉回「整機體驗與成本結構」。
+
+### 衝擊三：PC / 車用 / 手機的跨平台敘事，可能改變 OEM 對高通的看法
+
+Oryon 不只在手機，也出現在 Snapdragon X Series PC、車用與座艙平台。這讓高通可以對 OEM 講一個更大的故事：同一套 CPU 技術家族，跨手機、PC、車用，把 AI、連線、低功耗與軟體生態串起來。
+
+這對 MTK 的間接壓力很大。MTK 當然也有 Chromebook、智慧電視、IoT、車用與 ASIC 等產品線，但在「高階 Windows on Arm PC + 旗艦手機 + 車用座艙」這條敘事上，高通目前比較容易被看成正在挑戰 Apple 式垂直整合的公司。
+
+對手機廠來說，這種敘事不一定每天影響 BOM 成本，但會影響旗艦產品的品牌語言：採用 Snapdragon 8 Elite 不只是買一顆手機晶片，而是買進高通自研 CPU 與跨平台 AI PC/手機故事。MTK 要守住高階旗艦，就需要讓天璣不只是「便宜但夠快」，而是「有自己的高階理由」。
+
+### 衝擊四：最大的風險不是一代跑分，而是長期技術路線被定義
+
+短期看，Dimensity 9400 沒有被 Snapdragon 8 Elite 明顯甩開；不少實測甚至顯示兩者在遊戲體驗上非常接近。這代表 MTK 的工程能力仍然很強。
+
+但長期風險在於敘事權：
+
+- 高通可以說：我們有自製 CPU，可從微架構開始調整。
+- Apple 可以說：我們有自製 CPU/GPU/NPU 與作業系統。
+- MTK 若只說：我們把 Arm 最新核心整合得很好，就容易被市場放在「優秀整合者」而不是「底層架構定義者」的位置。
+
+這個差別有點像本文前面談 MCP：誰掌握底層協議、能力與控制面，誰就能定義別人怎麼接上來。Oryon 讓高通多了一層可自定義的底層能力；MTK 需要用成本、速度、穩定體驗與生態合作，證明不自製 CPU 也能持續贏得旗艦設計。
+
+### 小結
+
+高通自製 CPU 對 MTK 的衝擊不是「天璣會立刻輸」，而是：高通把 Android 旗艦 SoC 的競爭重新拉向自研微架構與跨平台技術家族。MTK 短期仍可用 Dimensity 9400/後續天璣的實際體驗、功耗、成本與 OEM 支持維持競爭；但中長期要小心被市場貼上「公版 Arm 整合者」標籤，導致高階溢價與技術護城河敘事被高通拿走。
+
 ## 我可以放進資料庫的筆記
 
 - INSIDE 這篇 Hermes GPT 文章抓到「開發者想降低對雲端 AI 配額依賴」的真痛點，但把 `hermes-gpt` repo 寫成「本地模型接進 ChatGPT、突破 Codex 配額」時，與 GitHub README 的產品定位不符。

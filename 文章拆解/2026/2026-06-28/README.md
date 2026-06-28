@@ -3,5 +3,5 @@
 - [Hermes GPT v0.3.0、MCP 與「突破 Codex 配額」敘事：一篇 AI 科技新聞如何把工具整合寫成趨勢故事](./01-hermes-gpt-mcp與codex配額敘事.md)
   - 原文：INSIDE「Hermes GPT v0.3.0：透過 MCP 把本地模型接進 ChatGPT，突破 Codex 配額限制」（使用者貼文全文）
   - 並讀：[GitHub｜asimons81/hermes-gpt](https://github.com/asimons81/hermes-gpt)
-  - 主題：MCP、Hermes GPT、Hermes Agent、Codex 配額、本地模型敘事、開放協議、AI 科技新聞事實校準。
+  - 主題：MCP、Hermes GPT、Hermes Agent、Codex 配額、本地模型敘事、開放協議、AI 科技新聞事實校準；額外延伸討論高通 Oryon 自製 CPU 對 MTK / 聯發科旗艦 SoC 敘事的衝擊。
 
