@@ -33,8 +33,15 @@
 - 近期：[LA4VLA: Learning to Act without Seeing via Language-Action Pretraining](./論文拆解/2026/2026-06-28/01-la4vla-language-action-pretraining.md)
 - 近期：[RouterVLA: Turning Smoke Tests into Supervision for Heterogeneous VLA Selection](./論文拆解/2026/2026-06-28/02-routervla-smoke-tests-supervision.md)
 
+### 其他筆記
+
+- [其他筆記索引](./其他/README.md)
+- [Business Forensics AI / Imara：公開 repo 是否已經「leak」的專案稽核筆記](./其他/2026/2026-06-29/01-business-forensics-ai-leak-audit.md)
+
 ### 近期快速連結（一個月內）
 
+- [2026-06-29 其他筆記索引](./其他/2026/2026-06-29/README.md)
+  - 稽核：[Business Forensics AI / Imara：公開 repo 是否已經「leak」的專案稽核筆記](./其他/2026/2026-06-29/01-business-forensics-ai-leak-audit.md)
 - [2026-06-28 文章拆解索引](./文章拆解/2026/2026-06-28/README.md)
   - 專題：[Hermes GPT v0.3.0、MCP 與「突破 Codex 配額」敘事](./文章拆解/2026/2026-06-28/01-hermes-gpt-mcp與codex配額敘事.md)
   - 專題：[高通自製 CPU 對 MTK 的衝擊：2026 最新資料、SWOT 與 DD](./文章拆解/2026/2026-06-28/02-高通自製cpu對mtk衝擊-swot-dd.md)
@@ -59,6 +66,7 @@
 
 ### 目前主題線索
 
+- AI-agent 專案邊界與 source disclosure：[Business Forensics AI / Imara leak 稽核](./其他/2026/2026-06-29/01-business-forensics-ai-leak-audit.md)
 - 高風險本機能力介面化：[Hermes GPT v0.3.0、MCP 與「突破 Codex 配額」敘事](./文章拆解/2026/2026-06-28/01-hermes-gpt-mcp與codex配額敘事.md)
 - 模型編排與 AI 主權：[Sakana Fugu 初步調查：模型群的指揮官](./文章拆解/2026/2026-06-28/04-sakana-fugu-模型編排初步調查.md)
 - 手機 SoC 高階價值池：[高通自製 CPU 對 MTK 的衝擊：2026 最新資料、SWOT 與 DD](./文章拆解/2026/2026-06-28/02-高通自製cpu對mtk衝擊-swot-dd.md)
