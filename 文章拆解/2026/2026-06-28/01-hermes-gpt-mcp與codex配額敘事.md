@@ -313,6 +313,9 @@ MCP 的長期意義在這裡，不是單純避開某個 API 的限制。
 - [MediaTek Dimensity 9400 官方頁](https://www.mediatek.com/products/smartphones/mediatek-dimensity-9400)：聯發科主打全大核 CPU、Arm Cortex-X925、AI、影像與遊戲能力，代表它仍採 Arm 公版/半客製核心路線來拚旗艦。
 - [Android Authority：Dimensity 9400 遊戲實測](https://www.androidauthority.com/gaming-on-mediatek-dimensity-9400-3510050/)：實測認為 Dimensity 9400 與 Snapdragon 8 Elite 在實際遊戲中差距很小，甚至在熱與長時間穩定性上不必然輸；這提醒我們不能只用高通自製 CPU 敘事直接推論 MTK 立即失勢。
 - [硬是要學：Snapdragon 8 Elite 與天璣 9400 跑分比較](https://www.soft4fun.net/tech/news/snapdragon-8-elite-vs-dimensity-9400.htm)：中文科技媒體也把兩者放在同一個旗艦對位框架裡，顯示市場已把「高通 Oryon 自製 CPU vs 聯發科天璣全大核」當成下一輪旗艦手機 SoC 故事線。
+- [Counterpoint：Global Smartphone AP Market Share Q1 2024](https://www.counterpointresearch.com/en/reports/infographic-global-smartphone-ap-market-share-q1-2024)：MediaTek 以 40% 出貨份額領先，高通為 23%；但營收份額高通 36%、MediaTek 17%，顯示高通在高階 ASP 的優勢。
+- [Counterpoint：Global Smartphone AP Market Share Q4 2024](https://www.counterpointresearch.com/report/infographic-global-smartphone-ap-market-share-q4-2024)：MediaTek Q4 2024 出貨份額仍為 34%，高通為 21%；但營收份額高通 34%、MediaTek 13%，Snapdragon 8 Elite 與 Galaxy S25 設計案強化高通高階營收敘事。
+- [MediaTek 2024 Annual Report](https://cdn-www.mediatek.com/posts/2024-English-Annual-Report.pdf)：MediaTek 2024 年營收新台幣 5,306 億元、年增 22.4%；Dimensity 9400 帶動 flagship revenue 翻倍，2024 年貢獻超過 20 億美元。
 
 ### 衝擊一：高通把競爭從 Arm 公版核心拉回「自有微架構」
 
@@ -356,6 +359,44 @@ Oryon 不只在手機，也出現在 Snapdragon X Series PC、車用與座艙平
 ### 小結
 
 高通自製 CPU 對 MTK 的衝擊不是「天璣會立刻輸」，而是：高通把 Android 旗艦 SoC 的競爭重新拉向自研微架構與跨平台技術家族。MTK 短期仍可用 Dimensity 9400/後續天璣的實際體驗、功耗、成本與 OEM 支持維持競爭；但中長期要小心被市場貼上「公版 Arm 整合者」標籤，導致高階溢價與技術護城河敘事被高通拿走。
+
+### 營收衝擊與市場份額：真正要看的不是出貨第一，而是高階 ASP
+
+如果只看出貨量，MTK 其實不是弱者。Counterpoint 的智慧手機 AP/SoC 資料顯示，MediaTek 在 2024 年 Q1 以 40% 出貨份額領先，高通為 23%；到 Q4 2024，MediaTek 仍以 34% 出貨份額領先，高通為 21%。這表示 MTK 在中低階與中高階 Android SoC 的鋪貨能力仍很強。
+
+但營收份額呈現另一個世界。Counterpoint 同一組資料顯示，2024 年 Q1 高通以 36% 營收份額領先，MediaTek 為 17%；Q4 2024 高通仍有 34% 營收份額，MediaTek 則為 13%。換句話說，**MTK 贏的是量，高通贏的是高階單價與高階設計案的價值密度**。
+
+用一個粗略但有用的相對 ASP 指標來看：
+
+| 期間 | MTK 出貨份額 | MTK 營收份額 | 高通出貨份額 | 高通營收份額 | 高通相對 ASP / MTK 相對 ASP |
+|---|---:|---:|---:|---:|---:|
+| 2024 Q1 | 40% | 17% | 23% | 36% | 約 3.7 倍 |
+| 2024 Q4 | 34% | 13% | 21% | 34% | 約 4.2 倍 |
+
+這個倍數不是實際晶片售價，而是用「營收份額 / 出貨份額」估出來的相對價值密度。它說明一件事：高通即使出貨份額較低，只要守住旗艦與高階 Android，營收與毛利敘事就會比 MTK 更強。
+
+這也是 Oryon 對 MTK 的財務壓力所在。高通自製 CPU 若只是讓 Snapdragon 8 Elite 跑分漂亮，衝擊有限；但如果 Oryon 讓高通更穩地拿下 Samsung Galaxy S 系列、中國品牌 Ultra / Pro 旗艦、摺疊機與高價位 Android 設計案，那它打到的不是 MTK 的總出貨基本盤，而是 MTK 最想往上爬的高 ASP 區間。
+
+MediaTek 2024 年年報提供了一個參考基準：公司全年營收為新台幣 5,306 億元，年增 22.4%；Dimensity 9400 帶動旗艦手機採用，讓 MTK 整體 flagship revenue 翻倍，2024 年貢獻超過 20 億美元。這代表旗艦線雖然不是 MTK 全部營收，但已是它提高毛利、改善品牌定位、突破「中低階晶片王」印象的關鍵。
+
+用簡單情境估算：若以 MTK 2024 年總營收約新台幣 5,306 億元、旗艦收入約 20 億美元作基準，若高通 Oryon / Snapdragon 8 Elite 後續使 MTK 旗艦收入少拿 5%、10%、20%、30%，大致對應：
+
+| 假設 MTK 旗艦收入流失 | 約流失金額 | 約占 MTK 2024 總營收 |
+|---:|---:|---:|
+| 5% | 1 億美元，約新台幣 32 億元 | 約 0.6% |
+| 10% | 2 億美元，約新台幣 64 億元 | 約 1.2% |
+| 20% | 4 億美元，約新台幣 128 億元 | 約 2.4% |
+| 30% | 6 億美元，約新台幣 192 億元 | 約 3.6% |
+
+這個估算有意保守：它只看旗艦收入流失，不假設中階產品跟著掉單，也不假設毛利率變化。真正的股價與投資敘事衝擊可能比營收百分比更大，因為市場通常會把旗艦設計案視為未來 ASP、毛利率與品牌升級的先行指標。
+
+所以，對 MTK 而言，最重要的觀察指標不是「總出貨份額是否還第一」，而是三個更細的問題：
+
+1. **高階 Android 設計案份額**：中國品牌 Pro / Ultra、摺疊機、遊戲手機與 Samsung 非美系版本，天璣能拿多少？
+2. **營收份額是否往上走**：如果 MTK 出貨第一但營收份額停在 13%–17%，代表高階價值仍被高通與 Apple 拿走。
+3. **旗艦收入能否連續成長**：Dimensity 9400 讓 flagship revenue 超過 20 億美元；後續 9500 / 9600 若能持續放大，才表示 MTK 真正打進高階，而不是只在單代產品上聲量成功。
+
+最後，這裡要避免一個常見誤判：**高通自製 CPU 不一定會壓垮 MTK 的出貨份額，但可能壓住 MTK 的營收份額上限。** MTK 的量大基本盤來自中低階與中階 5G；高通 Oryon 的殺傷力則在高階 Android 的價值池。如果 MTK 守得住量、但攻不上高 ASP，財務上仍會出現「出貨第一、營收第三」的結構性折價。
 
 ## 我可以放進資料庫的筆記
 
