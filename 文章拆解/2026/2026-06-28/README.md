@@ -5,7 +5,7 @@
   - 並讀：[GitHub｜asimons81/hermes-gpt](https://github.com/asimons81/hermes-gpt)
   - 主題：MCP、Hermes GPT、Hermes Agent、Codex 配額、本地模型敘事、開放協議、AI 科技新聞事實校準。
 
-- [高通自製 CPU 對 MTK 的衝擊：以第一性原理做 SWOT 與 DD 分析](./02-高通自製cpu對mtk衝擊-swot-dd.md)
+- [高通自製 CPU 對 MTK 的衝擊：以 2026 最新資料做 SWOT 與 DD 第一性分析](./02-高通自製cpu對mtk衝擊-swot-dd.md)
   - 類型：使用者指定獨立專題筆記。
-  - 主題：高通 Oryon 自製 CPU、Snapdragon 8 Elite、MediaTek Dimensity 9400、旗艦 Android SoC、營收份額、高階 ASP、SWOT、DD。
+  - 主題：高通 Oryon 自製 CPU、Snapdragon 8 Elite Gen 5、MediaTek Dimensity 9500、2026 AP/SoC 出貨份額、營收份額、高階 ASP、SWOT、DD。
 
