@@ -3,6 +3,7 @@
 ## 2026-06-28
 
 - [Hermes GPT v0.3.0、MCP 與「突破 Codex 配額」敘事](./2026-06-28/01-hermes-gpt-mcp與codex配額敘事.md)
+- [高通自製 CPU 對 MTK 的衝擊：SWOT 與 DD 第一性分析](./2026-06-28/02-高通自製cpu對mtk衝擊-swot-dd.md)
 
 ## 2026-06-25
 
