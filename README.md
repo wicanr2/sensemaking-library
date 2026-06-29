@@ -26,8 +26,8 @@
 
 ### 論文拆解
 
-- 最新日期：[2026-06-28](./論文拆解/2026/2026-06-28/README.md)
-- 近期：[LA4VLA](./論文拆解/2026/2026-06-28/01-la4vla-language-action-pretraining.md)、[RouterVLA](./論文拆解/2026/2026-06-28/02-routervla-smoke-tests-supervision.md)
+- 最新日期：[2026-06-29](./論文拆解/2026/2026-06-29/README.md)
+- 近期：[E-TTS](./論文拆解/2026/2026-06-29/01-e-tts-embodied-test-time-scaling.md)、[In-Context World Modeling](./論文拆解/2026/2026-06-29/02-in-context-world-modeling-robotic-control.md)
 
 ### 其他筆記
 
@@ -36,6 +36,9 @@
 
 ## 近期快速連結（一個月內）
 
+- [2026-06-29 論文拆解索引](./論文拆解/2026/2026-06-29/README.md)
+  - 論文：[E-TTS](./論文拆解/2026/2026-06-29/01-e-tts-embodied-test-time-scaling.md)
+  - 論文：[In-Context World Modeling](./論文拆解/2026/2026-06-29/02-in-context-world-modeling-robotic-control.md)
 - [2026-06-29 新聞拆解索引](./新聞拆解/2026/2026-06-29/README.md)
   - 台灣：[德商補台灣半導體材料設備缺口](./新聞拆解/2026/2026-06-29/01-德商補台灣半導體材料設備缺口.md)
   - 台灣：[AI 進入工地與營造缺工](./新聞拆解/2026/2026-06-29/02-ai進入工地與營造缺工.md)
