@@ -18,8 +18,8 @@
 
 3. [專欄｜Speculative Speculative Decoding：LLM 推論加速正在從「模型更小」轉向「時間軸重排」](./03-speculative-speculative-decoding-column.md)
    - arXiv：2603.03251v3
-   - 收錄理由：使用者指定整理 speculative decoding 趨勢；本篇作為額外專欄，不計入每日自動選文上限。
-   - 閱讀範圍：arXiv metadata、Abstract、Introduction，並額外快速掃描 Related Work 題名層級與 arXiv metadata 趨勢。
+   - 收錄理由：使用者指定整理 speculative decoding 趨勢；已擴充 SSD、EAGLE / MTP、PARD、異質 vocabulary、LayerSkip / early exiting 的技術地圖；本篇作為額外專欄，不計入每日自動選文上限。
+   - 閱讀範圍：arXiv metadata、Abstract、Introduction，並額外快速掃描 Related Work 題名層級、arXiv metadata 趨勢與相關方向摘要。
 
 ## Commit 狀態
 

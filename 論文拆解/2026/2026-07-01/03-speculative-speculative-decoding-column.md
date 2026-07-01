@@ -127,7 +127,7 @@ target model 正在驗證第 n 輪
 
 ## 為什麼這像是一個 LLM 研究趨勢，而不是單篇技巧？
 
-我會把 speculative decoding 趨勢拆成三條線。
+我會把 speculative decoding 趨勢拆成三條線；使用者補充的 SSD、EAGLE / MTP、PARD、異質 vocabulary、layer skipping / early exiting，其實剛好可以排成一張技術地圖。
 
 ### 趨勢一：推論成本變成 LLM 產品的第一級問題
 
@@ -166,6 +166,110 @@ Speculative decoding 的不同點是：
 - 哪些 cache 可以跨請求 reuse？
 - 哪些 token / span / block 應該被 parallel verified？
 - 在 batch serving、agent 長任務、VLM / VLA 中，speculation 應該在哪一層發生？
+
+## 相關技術地圖：同一個瓶頸的幾種打法
+
+用第一性原理來看，autoregressive decoding 的核心瓶頸不是「模型只會慢」，而是三件事疊在一起：
+
+1. **時間相依**：下一個 token 要等上一個 token 出來。
+2. **驗證昂貴**：真正可信的分布來自 target model，但 target model 每次 forward 都貴。
+3. **對齊困難**：便宜的 draft 路徑若和 target 分布、tokenizer、cache 狀態不對齊，就會被大量拒絕，甚至破壞 lossless 條件。
+
+使用者列的幾個方向，可以視為分別攻擊這三個瓶頸。
+
+### 1. SSD：平行化 speculation 和 verification
+
+代表：[`Speculative Speculative Decoding`](https://arxiv.org/abs/2603.03251v3)。
+
+普通 speculative decoding 的流程是：
+
+```text
+draft 猜一段 → target 驗證 → 根據驗證結果再 draft 下一段
+```
+
+SSD 問的是：target 正在驗證時，draft model 為什麼要閒著？它可以先猜 target 可能會接受幾個 token、若拒絕會補哪個 bonus token，並預先準備下一輪分支。
+
+所以 SSD 的本質不是「draft model 更準」，而是：
+
+> 把 speculative decoding 自己內部的等待，也變成可投機的對象。
+
+它攻擊的是 **時間相依 / pipeline bubble**。
+
+### 2. Model-based drafting：讓 draft 更會一次猜多步
+
+代表：[`EAGLE`](https://arxiv.org/abs/2401.15077)、[`EAGLE-2`](https://arxiv.org/abs/2406.16858)、[`EAGLE-3`](https://arxiv.org/abs/2503.01840)、multi-token prediction（例如 [`Better & Faster Large Language Models via Multi-token Prediction`](https://arxiv.org/abs/2404.19737)）。
+
+這條線的直覺是：如果 draft 候選常被 target 接受，就可以把昂貴 target forward 的成本攤到更多 token 上。
+
+EAGLE 系列的關鍵不是拿一個普通小語言模型亂猜，而是設計更貼近 target 的 draft 機制。早期 EAGLE 強調 feature-level autoregression；EAGLE-2 用 dynamic draft tree；EAGLE-3 進一步改成 direct token prediction 與 multi-layer feature fusion。MTP / multi-token prediction 則是讓模型原生學會同時預測未來多個 token。
+
+這條線攻擊的是 **接受率 / accepted length**：
+
+```text
+每次 target forward 的實際收益
+= target 一次驗證後接受的 token 數
+```
+
+如果 accepted length 從 2 變成 5，系統感受到的速度差會非常明顯。
+
+### 3. PARD / parallel draft：一次產生多條候選分支
+
+代表：[`PARD: Accelerating LLM Inference with Low-Cost PARallel Draft Model Adaptation`](https://arxiv.org/abs/2504.18583)、以及後續 parallel/tree drafting 類工作。
+
+PARD 類方法把問題從「猜一條最可能路徑」改成「同時產生多個未來 continuation / branch」。target model 再用一次或少數幾次 forward 驗證多條分支。
+
+這和 SSD 的差別在於：
+
+- PARD 主要擴大 **候選 token 路徑的寬度**；
+- SSD 主要投機 **verification outcome 之後的下一輪流程**。
+
+兩者都在做 parallelism，但 parallel 的位置不同。PARD 比較像 branch expansion；SSD 比較像 pipeline scheduling / branch prediction。
+
+### 4. 異質 vocabulary：讓現成 draft / target 模型也能 lossless 搭配
+
+代表：[`Accelerating LLM Inference with Lossless Speculative Decoding Algorithms for Heterogeneous Vocabularies`](https://arxiv.org/abs/2502.05202)，其中討論 SLEM、SLRS、TLI 等異質詞彙表演算法。
+
+這個方向很務實。理論上，draft 和 target 最好 tokenizer 一樣，token 邊界一致，驗證才單純。但現實部署常常是：你手上已經有一個便宜模型、另一個強 target model，它們的 vocabulary / tokenizer 不一致。
+
+如果 tokenizer 不一致，draft 說的「一個 token」在 target 那邊可能不是同一個單位。這會造成兩個麻煩：
+
+1. 驗證單位不一致，accept / reject 不再是簡單逐 token 比較。
+2. 如果處理不嚴謹，會破壞 speculative decoding 最珍貴的 lossless 性質。
+
+SLEM / SLRS / TLI 這類方法可以理解成：在不同 vocabulary 之間建立可驗證的對齊與拒絕採樣規則，讓 off-the-shelf draft model 與 target model 仍可安全搭配。
+
+它攻擊的是 **部署摩擦 / 模型可組合性**，不是單純 benchmark speedup。
+
+### 5. Layer skipping / early exiting：把同一個模型的淺層當 draft
+
+代表：[`LayerSkip`](https://arxiv.org/abs/2404.16710)、[`Kangaroo`](https://arxiv.org/abs/2404.18911)、以及 self-speculative decoding 類方法。
+
+這條線不一定需要額外小模型，而是把 target model 的前幾層、部分層、或早退 head 當成 draft：
+
+```text
+淺層 / 跳層快速產生 draft token
+完整 target layers 再驗證
+```
+
+直覺上，Transformer 前中層已經掌握不少局部語意與高機率 token；不必每次都跑完整深度才能提出候選。LayerSkip 類方法甚至會在訓練時加入 layer dropout / early exit loss，讓中間層更適合被拿來 draft。
+
+這條線攻擊的是 **額外 draft model 成本**：如果 draft 可以從 target 自身長出來，部署就少一組模型、少一份權重管理，也可能更容易共享 KV/cache 與系統資源。
+
+### 小結：它們不是互斥，而是在不同層面補洞
+
+可以把這些方法放成一張概念表：
+
+| 方向 | 投機的對象 | 主要解的問題 | 代表例子 |
+|---|---|---|---|
+| SSD | 驗證結果與下一輪 speculation | target 驗證期間 draft 閒置 | SSD / Saguaro |
+| Model-based drafting | 更準、更長的 token 草稿 | 接受率與 accepted length | EAGLE、EAGLE-2/3、MTP |
+| Parallel draft | 多條 token continuation | 單一路徑猜錯就浪費 | PARD、tree drafting |
+| 異質 vocabulary | tokenizer 對齊與 lossless 驗證 | 現成模型難搭配 | SLEM、SLRS、TLI |
+| Layer skipping / early exiting | 模型淺層或部分層輸出 | 不想另訓 / 另部署 draft model | LayerSkip、Kangaroo |
+
+因此，這些主題可以一起納入同一個趨勢：
+
+> speculative decoding 正在從單一演算法，變成一套 inference-time execution stack：上層是任務與服務排程，中層是 draft / verify protocol，底層是模型架構、tokenizer 對齊、cache 與硬體並行。
 
 ## 跟 2026 年 arXiv 脈絡的關係
 
@@ -245,7 +349,7 @@ GPU 很會平行算，但 autoregressive decoding 很會讓 GPU 等。SSD 的哲
 
 ## 可放進資料庫的筆記
 
-> Speculative decoding 的研究趨勢，不只是讓小模型替大模型猜 token；它正在變成 LLM inference 的時間軸重排技術。`Speculative Speculative Decoding` 的關鍵洞察是：普通 speculative decoding 仍有「draft 等 verification 結果」的順序依賴，因此可以在 target 驗證時，讓 draft 預測可能的 verification outcomes 並提前準備下一輪 speculation。這代表 LLM 推論優化正在從模型壓縮、單次 forward 加速，走向更像 branch prediction / pipeline scheduling 的系統化推論設計。
+> Speculative decoding 的研究趨勢，不只是讓小模型替大模型猜 token；它正在變成 LLM inference 的時間軸重排技術。`Speculative Speculative Decoding` 的關鍵洞察是：普通 speculative decoding 仍有「draft 等 verification 結果」的順序依賴，因此可以在 target 驗證時，讓 draft 預測可能的 verification outcomes 並提前準備下一輪 speculation。把 EAGLE / MTP、PARD、異質 vocabulary、LayerSkip / early exiting 放在一起看，這個領域正在形成一套 inference-time execution stack：用更準的 draft 提高接受長度、用 parallel branches 提高命中率、用 tokenizer 對齊降低部署摩擦、用 self-speculation 降低額外模型成本。這代表 LLM 推論優化正在從模型壓縮、單次 forward 加速，走向更像 branch prediction / pipeline scheduling 的系統化推論設計。
 
 ## 後續想追的問題
 
