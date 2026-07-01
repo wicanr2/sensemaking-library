@@ -220,7 +220,7 @@ Open-RMF 若要變成商業平台，最終護城河不會只是「有 adapter」
 
 前一篇筆記的核心是：不要把「使用 ROS 2」直接等同於「使用 Open-RMF」。Dexory、KION、Fetch / Zebra 分別代表不同層次：
 
-- Dexory：最清楚的 ROS 2 / Nav2 商用化案例；重點在 robot runtime 與倉儲 data platform。
+- Dexory：最清楚的 ROS 2 / Nav2 商用化案例；重點在 robot runtime 與倉儲 data platform。使用者補充的 Dexory × Neele-Vat 官方影片也提供商用場域訊號：Dexory 描述其 robot 自 2025 年初在 Rotterdam Pernis 倉儲場域運作，覆蓋約 40,000 個 pallet locations，每週自動掃描整倉 3 次，並把資料送進 DexoryView / Dexory 軟體平台形成 inventory visibility。這強化的是「robot runtime → data platform → warehouse operations」的商業路徑，而不是 Open-RMF 採用證據。
 - KION：大型物流設備商吸收 ROS / ROS 2 能力；公開資料不足以證明具體 Open-RMF 產品化。
 - Fetch / Zebra：ROS 商用化早期代表；ROS 2 / DDS 車隊說法要保守。
 
@@ -296,5 +296,6 @@ facility vendor 說是門禁 / 電梯策略問題
 - [GitHub｜open-rmf/fleet_adapter_clearpath](https://github.com/open-rmf/fleet_adapter_clearpath)
 - [InOrbit｜Open source InOrbit RMF Fleet Adapter now available](https://www.inorbit.ai/blog/inorbit-rmf-adapter)
 - [InOrbit｜Warehouse Automation](https://www.inorbit.ai/warehouseautomation)
+- [YouTube｜Dexory Robot x Neele Vat | Autonomous Robots Transform Inventory Management](https://www.youtube.com/watch?v=jgQ51fDQwRI)
 - [GitHub｜quikbot/open-rmf-adapters-quiksync](https://github.com/quikbot/open-rmf-adapters-quiksync)
 - [前篇筆記｜ROS 2 & Open-RMF：從商用產品線看機器人開源堆疊的落地邊界](./03-ros2-open-rmf商用產品線觀察.md)
