@@ -4,6 +4,7 @@
 
 ## 日期索引
 
+- [2026-07-01｜ZR-0 Dense ECoT VLA；SPARK Anchored Robotic Keypoints](./2026-07-01/README.md)
 - [2026-06-30｜SA-VLA；Automating the Design of Embodied AgentArchitectures](./2026-06-30/README.md)
 - [2026-06-29｜E-TTS；In-Context World Modeling](./2026-06-29/README.md)
 - [2026-06-28｜LA4VLA；RouterVLA](./2026-06-28/README.md)

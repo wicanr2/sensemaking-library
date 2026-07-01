@@ -27,8 +27,8 @@
 
 ### 論文拆解
 
-- 最新日期：[2026-06-30](./論文拆解/2026/2026-06-30/README.md)
-- 近期：[SA-VLA](./論文拆解/2026/2026-06-30/01-sa-vla-state-aware-tokenizer.md)、[Automating Embodied Agent Architectures](./論文拆解/2026/2026-06-30/02-automating-embodied-agent-architectures.md)
+- 最新日期：[2026-07-01](./論文拆解/2026/2026-07-01/README.md)
+- 近期：[ZR-0 Dense ECoT VLA](./論文拆解/2026/2026-07-01/01-zr-0-dense-ecot-vla.md)、[SPARK Anchored Robotic Keypoints](./論文拆解/2026/2026-07-01/02-spark-anchored-robotic-keypoints.md)
 
 ### 其他筆記
 
@@ -44,6 +44,8 @@
 - [2026-06-30 新聞拆解索引](./新聞拆解/2026/2026-06-30/README.md)
   - 台灣：[科嶠 Brooks 晶圓傳載盒清洗設備](./新聞拆解/2026/2026-06-30/01-科嶠brooks晶圓傳載盒清洗設備.md)
   - 國外：[BIS 警告 AI 投資過熱](./新聞拆解/2026/2026-06-30/04-bis警告ai投資過熱與金融脆弱.md)、[Ford 重聘人類品管工程師](./新聞拆解/2026/2026-06-30/05-ford重聘人類品管工程師與ai邊界.md)
+- [2026-07-01 論文拆解索引](./論文拆解/2026/2026-07-01/README.md)
+  - 論文：[ZR-0 Dense ECoT VLA](./論文拆解/2026/2026-07-01/01-zr-0-dense-ecot-vla.md)、[SPARK Anchored Robotic Keypoints](./論文拆解/2026/2026-07-01/02-spark-anchored-robotic-keypoints.md)
 - [2026-06-30 論文拆解索引](./論文拆解/2026/2026-06-30/README.md)
   - 論文：[SA-VLA](./論文拆解/2026/2026-06-30/01-sa-vla-state-aware-tokenizer.md)、[Automating Embodied Agent Architectures](./論文拆解/2026/2026-06-30/02-automating-embodied-agent-architectures.md)
 - [2026-06-30 其他筆記索引](./其他/2026/2026-06-30/README.md)
