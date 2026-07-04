@@ -4,7 +4,7 @@
 
 ## 最新日期
 
-- [2026-07-02](./2026/2026-07-02/README.md)
+- [2026-07-04](./2026/2026-07-04/README.md)
 
 ## 年度索引
 
@@ -12,6 +12,7 @@
 
 ## 2026
 
+- [2026-07-04｜VLA-Corrector；LIME Intent-aware Camera Motion](./2026/2026-07-04/README.md)
 - [2026-07-02｜Human-as-Humanoid；Z-1 RL for VLA](./2026/2026-07-02/README.md)
 - [2026-07-01｜ZR-0 Dense ECoT VLA；SPARK Anchored Robotic Keypoints；Speculative Speculative Decoding 專欄](./2026/2026-07-01/README.md)
 - [2026-06-30｜SA-VLA；Automating the Design of Embodied AgentArchitectures](./2026/2026-06-30/README.md)
