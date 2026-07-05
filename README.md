@@ -12,7 +12,7 @@
 |---|---|---|
 | 新聞拆解 | 每日新聞選文；拆文章結構、產業訊號與可重用判斷模型 | [最新 2026-07-05](./新聞拆解/2026/2026-07-05/README.md)｜[2026 年索引](./新聞拆解/2026/README.md) |
 | 文章拆解 | 非每日新聞的長文、官方文件、技術文件、專題文章 | [文章拆解索引](./文章拆解/README.md)｜[2026 年索引](./文章拆解/2026/README.md) |
-| 論文拆解 | arXiv / 研究論文的有限閱讀筆記，預設標示閱讀邊界 | [最新 2026-07-04](./論文拆解/2026/2026-07-04/README.md)｜[論文拆解索引](./論文拆解/README.md) |
+| 論文拆解 | arXiv / 研究論文的有限閱讀筆記，預設標示閱讀邊界 | [最新 2026-07-05](./論文拆解/2026/2026-07-05/README.md)｜[論文拆解索引](./論文拆解/README.md) |
 | 其他筆記 | 工具專欄、專案觀察、公司資料重建、repo 稽核等非典型研究 | [其他筆記索引](./其他/README.md)｜[2026 年索引](./其他/2026/README.md) |
 | 思考模型 | 從多篇筆記抽象出來的判斷框架與檢查清單 | [思考模型索引](./思考模型/README.md) |
 | 整理方向 | 筆記系統的分類、排版與後續演化原則 | [筆記整理方向](./筆記整理方向.md) |
@@ -32,6 +32,7 @@
 
 ### 論文 / 專題
 
+- [2026-07-05 論文](./論文拆解/2026/2026-07-05/README.md)：[Embodied.cpp](./論文拆解/2026/2026-07-05/01-embodied-cpp-portable-inference-runtime.md)、[Task-Agnostic pretraining for VLAs](./論文拆解/2026/2026-07-05/02-task-agnostic-pretraining-vlas.md)
 - [2026-07-04 論文](./論文拆解/2026/2026-07-04/README.md)：[VLA-Corrector](./論文拆解/2026/2026-07-04/01-vla-corrector-adaptive-action-horizon.md)、[LIME Intent-aware Camera Motion](./論文拆解/2026/2026-07-04/02-lime-intent-aware-camera-motion.md)
 - [2026-07-02 論文](./論文拆解/2026/2026-07-02/README.md)：[Human-as-Humanoid](./論文拆解/2026/2026-07-02/01-human-as-humanoid-ego-exo-vla.md)、[Z-1 RL for VLA](./論文拆解/2026/2026-07-02/02-z-1-rl-for-vla.md)
 - [2026-07-01 論文](./論文拆解/2026/2026-07-01/README.md)：[ZR-0 Dense ECoT VLA](./論文拆解/2026/2026-07-01/01-zr-0-dense-ecot-vla.md)、[SPARK Anchored Robotic Keypoints](./論文拆解/2026/2026-07-01/02-spark-anchored-robotic-keypoints.md)
@@ -45,7 +46,7 @@
 - **前沿模型安全、治理與技術主權**：[中等強國開源 AI 聯盟](./新聞拆解/2026/2026-07-05/02-中等強國開源ai聯盟.md)、[Anthropic Claude 解禁與雙用途 AI](./新聞拆解/2026/2026-07-02/03-anthropic-claude解禁與雙用途ai.md)、[AI 瀏覽器夢境攻擊](./新聞拆解/2026/2026-07-01/04-ai瀏覽器夢境攻擊.md)
 - **半導體供應鏈底層瓶頸**：[信驊 BMC 必要瓶頸](./新聞拆解/2026/2026-07-04/03-信驊bmc必要瓶頸.md)、[AI 伺服器被動元件](./新聞拆解/2026/2026-07-05/01-ai伺服器被動元件.md)、[日月光先進封裝轉型](./新聞拆解/2026/2026-07-03/02-日月光先進封裝轉型.md)
 - **AI 平台權力與敘事控制**：[Amazon / OpenAI 傳記電影利益衝突](./新聞拆解/2026/2026-07-05/03-amazon-openai傳記電影利益衝突.md)、[Google 限制 Meta Gemini](./新聞拆解/2026/2026-06-28/06-google限制meta-gemini算力.md)、[Meta AI agent 進展不如預期](./新聞拆解/2026/2026-07-04/05-meta-ai-agent進展不如預期.md)
-- **Physical AI / 機器人系統堆疊**：[VLA-Corrector](./論文拆解/2026/2026-07-04/01-vla-corrector-adaptive-action-horizon.md)、[LIME Intent-aware Camera Motion](./論文拆解/2026/2026-07-04/02-lime-intent-aware-camera-motion.md)、[Open-RMF 平台商業與研發投入價值](./其他/2026/2026-07-01/04-open-rmf平台商業與研發投入價值.md)、[Amazon 倉儲機器人與 QNX](./文章拆解/2026/2026-06-28/03-amazon-qnx-實體ai機器人安全層.md)
+- **Physical AI / 機器人系統堆疊**：[Embodied.cpp](./論文拆解/2026/2026-07-05/01-embodied-cpp-portable-inference-runtime.md)、[Task-Agnostic pretraining for VLAs](./論文拆解/2026/2026-07-05/02-task-agnostic-pretraining-vlas.md)、[VLA-Corrector](./論文拆解/2026/2026-07-04/01-vla-corrector-adaptive-action-horizon.md)、[LIME Intent-aware Camera Motion](./論文拆解/2026/2026-07-04/02-lime-intent-aware-camera-motion.md)、[Open-RMF 平台商業與研發投入價值](./其他/2026/2026-07-01/04-open-rmf平台商業與研發投入價值.md)
 - **社會系統與第一性原理**：[第一性原理的陷阱](./文章拆解/2026/2026-06-25/01-第一性原理的陷阱-工程思維誤讀人性.md)、[社會科學的第一性原理](./思考模型/社會科學的第一性原理.md)
 
 ## 調閱方式
