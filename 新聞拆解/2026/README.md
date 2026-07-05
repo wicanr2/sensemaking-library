@@ -2,6 +2,7 @@
 
 ## 日期索引
 
+- [2026-07-05](./2026-07-05/README.md)：AI 伺服器被動元件、中等強國開源 AI 聯盟、Amazon / OpenAI 傳記電影利益衝突。
 - [2026-07-04](./2026-07-04/README.md)：台電半導體用電翻倍、潘健成記憶體供不應求論、信驊 BMC 必要瓶頸、Google / Amazon AI 碳排 Scope 3、Meta AI agent 進展不如預期。
 - [2026-07-03](./2026-07-03/README.md)：聯發科 AI ASIC 獲利重估、日月光先進封裝轉型、Anthropic 洽談三星客製晶片。
 - [2026-07-02](./2026-07-02/README.md)：AI 資料中心產業效益評估、AI 通膨與 PMI、Anthropic Claude 解禁與雙用途 AI。
