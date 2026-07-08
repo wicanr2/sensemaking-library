@@ -2,6 +2,7 @@
 
 ## 日期索引
 
+- [2026-07-08](./2026-07-08/README.md)：臻鼎 ABF 缺口與 AI 基建、昇達科太赫茲三應用、AI 推升電腦漲價與 CPI、DeepSeek 自研推論晶片、中國限制 AI 人才與資本外流。
 - [2026-07-07](./2026-07-07/README.md)：國巨 MLCC 產能排擠漲價、AI 高階 MLCC 缺貨風險、AI 資料中心用電節奏、TeraWulf / Anthropic 算力長約。
 - [2026-07-05](./2026-07-05/README.md)：AI 伺服器被動元件、中等強國開源 AI 聯盟、Amazon / OpenAI 傳記電影利益衝突。
 - [2026-07-04](./2026-07-04/README.md)：台電半導體用電翻倍、潘健成記憶體供不應求論、信驊 BMC 必要瓶頸、Google / Amazon AI 碳排 Scope 3、Meta AI agent 進展不如預期。
