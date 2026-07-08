@@ -14,6 +14,7 @@
 | 文章拆解 | 非每日新聞的長文、官方文件、技術文件、專題文章 | [文章拆解索引](./文章拆解/README.md)｜[2026 年索引](./文章拆解/2026/README.md) |
 | 論文拆解 | arXiv / 研究論文的有限閱讀筆記，預設標示閱讀邊界 | [最新 2026-07-08](./論文拆解/2026/2026-07-08/README.md)｜[論文拆解索引](./論文拆解/README.md) |
 | 其他筆記 | 工具專欄、專案觀察、公司資料重建、repo 稽核等非典型研究 | [其他筆記索引](./其他/README.md)｜[2026 年索引](./其他/2026/README.md) |
+| 專題討論 | 跨多篇材料累積的主題專欄與知識地圖 | [專題討論索引](./專題討論/README.md)｜[Algorithmic Trading](./專題討論/Algorithmic-Trading/README.md) |
 | 思考模型 | 從多篇筆記抽象出來的判斷框架與檢查清單 | [思考模型索引](./思考模型/README.md) |
 | 整理方向 | 筆記系統的分類、排版與後續演化原則 | [筆記整理方向](./筆記整理方向.md) |
 
@@ -34,6 +35,7 @@
 
 ### 論文 / 專題
 
+- [Algorithmic Trading 專題](./專題討論/Algorithmic-Trading/README.md)：[VWAP 與 TWAP：大單如何被拆成市場看起來普通的小單](./專題討論/Algorithmic-Trading/01-vwap-twap-order-splitting.md)
 - [2026-07-08 論文](./論文拆解/2026/2026-07-08/README.md)：[Semantic Handoff](./論文拆解/2026/2026-07-08/01-semantic-handoff-vla-skill-composition.md)、[LingBot-VLA 2.0](./論文拆解/2026/2026-07-08/02-lingbot-vla-2-practical-vla.md)
 - [2026-07-07 論文](./論文拆解/2026/2026-07-07/README.md)：[HiMe](./論文拆解/2026/2026-07-07/01-hime-hierarchical-embodied-memory-vla.md)、[ResTacVLA](./論文拆解/2026/2026-07-07/02-restacvla-residual-tactile-representation.md)
 - [2026-07-06 其他](./其他/2026/2026-07-06/README.md)：[NVIDIA Halos for Robotics](./其他/2026/2026-07-06/01-nvidia-halos-physical-ai-safety-platform.md)
@@ -53,6 +55,7 @@
 - **半導體供應鏈底層瓶頸**：[臻鼎 ABF 缺口與 AI 基建](./新聞拆解/2026/2026-07-08/01-臻鼎abf缺口與ai基建.md)、[信驊 BMC 必要瓶頸](./新聞拆解/2026/2026-07-04/03-信驊bmc必要瓶頸.md)、[日月光先進封裝轉型](./新聞拆解/2026/2026-07-03/02-日月光先進封裝轉型.md)
 - **AI 平台權力與敘事控制**：[Amazon / OpenAI 傳記電影利益衝突](./新聞拆解/2026/2026-07-05/03-amazon-openai傳記電影利益衝突.md)、[Google 限制 Meta Gemini](./新聞拆解/2026/2026-06-28/06-google限制meta-gemini算力.md)、[Meta AI agent 進展不如預期](./新聞拆解/2026/2026-07-04/05-meta-ai-agent進展不如預期.md)
 - **Physical AI / 機器人系統堆疊**：[Semantic Handoff](./論文拆解/2026/2026-07-08/01-semantic-handoff-vla-skill-composition.md)、[LingBot-VLA 2.0](./論文拆解/2026/2026-07-08/02-lingbot-vla-2-practical-vla.md)、[HiMe](./論文拆解/2026/2026-07-07/01-hime-hierarchical-embodied-memory-vla.md)、[ResTacVLA](./論文拆解/2026/2026-07-07/02-restacvla-residual-tactile-representation.md)、[NVIDIA Halos for Robotics](./其他/2026/2026-07-06/01-nvidia-halos-physical-ai-safety-platform.md)、[CaP-X](./論文拆解/2026/2026-07-06/01-cap-x-code-as-policy-robot-manipulation.md)、[The Moving Eye](./論文拆解/2026/2026-07-06/02-moving-eye-vla-spatial-generalization.md)、[Embodied.cpp](./論文拆解/2026/2026-07-05/01-embodied-cpp-portable-inference-runtime.md)、[Task-Agnostic pretraining for VLAs](./論文拆解/2026/2026-07-05/02-task-agnostic-pretraining-vlas.md)、[VLA-Corrector](./論文拆解/2026/2026-07-04/01-vla-corrector-adaptive-action-horizon.md)、[Open-RMF 平台商業與研發投入價值](./其他/2026/2026-07-01/04-open-rmf平台商業與研發投入價值.md)
+- **Algorithmic Trading / 市場微結構**：[VWAP 與 TWAP：大單如何被拆成市場看起來普通的小單](./專題討論/Algorithmic-Trading/01-vwap-twap-order-splitting.md)
 - **社會系統與第一性原理**：[第一性原理的陷阱](./文章拆解/2026/2026-06-25/01-第一性原理的陷阱-工程思維誤讀人性.md)、[社會科學的第一性原理](./思考模型/社會科學的第一性原理.md)
 
 ## 調閱方式
