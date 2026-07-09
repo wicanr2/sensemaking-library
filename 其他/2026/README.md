@@ -1,5 +1,9 @@
 # 2026 其他筆記索引
 
+## 2026-07-09
+
+- [AI 晶片 / 資料流架構專欄｜Cerebras WSE-3 與 GPT-5.6 Sol：不是更大的 GPU，而是把記憶體牆拆成 90 萬個小房間](./2026-07-09/01-cerebras-wse3-csl-gpt56-sol資料流架構專欄.md)
+
 ## 2026-07-06
 
 - [Physical AI 安全平台專欄｜NVIDIA Halos for Robotics：安全平台不是一個套件，而是一整條責任鏈](./2026-07-06/01-nvidia-halos-physical-ai-safety-platform.md)
