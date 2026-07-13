@@ -4,6 +4,7 @@
 
 ## 日期索引
 
+- [2026-07-13｜Learning More from Less；LDT-Coord](./2026-07-13/README.md)
 - [2026-07-12｜Harness VLA；FabriVLA](./2026-07-12/README.md)
 - [2026-07-11｜Native Video-Action Pretraining；Latent Memory Palace](./2026-07-11/README.md)
 - [2026-07-09｜LaMem-VLA；EmbodiedGen V2](./2026-07-09/README.md)
