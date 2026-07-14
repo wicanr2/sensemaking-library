@@ -14,7 +14,7 @@
 
 ## 2026
 
-- [2026-07-14｜CLAP；GenVid2Robot](./2026/2026-07-14/README.md)
+- [2026-07-14｜CLAP；GenVid2Robot；RLPrompt（指定補讀）](./2026/2026-07-14/README.md)
 - [2026-07-13｜Learning More from Less；LDT-Coord](./2026/2026-07-13/README.md)
 - [2026-07-12｜Harness VLA；FabriVLA](./2026/2026-07-12/README.md)
 - [2026-07-11｜Native Video-Action Pretraining；Latent Memory Palace](./2026/2026-07-11/README.md)

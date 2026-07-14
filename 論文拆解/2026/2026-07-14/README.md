@@ -1,6 +1,6 @@
 # 2026-07-14 論文拆解
 
-今日選文 2 篇；本次只讀 arXiv Summary/Abstract 與 Introduction，未讀全文其他章節。兩篇都屬於近期 arXiv 新論文，且 arXiv ID 在 repo 中未發現重複。第一篇直接落在 VLM/VLA 與 robot action grounding；第二篇聚焦生成式影片先驗如何經過剛體幾何檢查後進入真實機器人操作。
+今日排程選文 2 篇；排程選文只讀 arXiv Summary/Abstract 與 Introduction，未讀全文其他章節。另依使用者指定，補讀 1 篇經典 prompt optimization 論文，該篇閱讀範圍為全文 PDF 與 arXiv source。使用者指定補充不計入每日排程選文上限。
 
 ## 今日選文
 
@@ -15,6 +15,14 @@
    - 分類：Robotics (cs.RO)；Machine Learning (cs.LG)
    - 選擇理由：它把 generated video 視為不確定的 motion hypothesis，而不是 robot demonstration；用 sparse rigid `SE(3)` consistency 作為 Physical AI 進入實體執行前的幾何閘門。
    - 閱讀範圍：Summary/Abstract + Introduction
+
+## 使用者指定補充閱讀
+
+3. [RLPrompt: Optimizing Discrete Text Prompts with Reinforcement Learning](./03-rlprompt-discrete-prompt-optimization.md)
+   - arXiv ID：2205.12548v3
+   - 分類：Computation and Language (cs.CL)；Machine Learning (cs.LG)
+   - 選擇理由：把 discrete prompt 搜尋改寫成 reinforcement learning，讓 prompt 從人工撰寫的自然語言指令，變成可用 reward 最佳化、可跨模型測試的黑箱控制介面。
+   - 閱讀範圍：全文 PDF + arXiv source；包含方法、實驗、分析、限制與附錄重點。
 
 ## commit 狀態
 
