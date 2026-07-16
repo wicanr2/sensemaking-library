@@ -4,6 +4,7 @@
 
 ## 日期索引
 
+- [2026-07-16｜PhysClaw-0；Semantic Anchoring](./2026-07-16/README.md)
 - [2026-07-15｜VistaVLA；Jetson-PI](./2026-07-15/README.md)
 - [2026-07-14｜CLAP；GenVid2Robot；RLPrompt（指定補讀）](./2026-07-14/README.md)
 - [2026-07-13｜Learning More from Less；LDT-Coord](./2026-07-13/README.md)
