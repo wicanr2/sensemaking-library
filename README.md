@@ -12,7 +12,7 @@
 |---|---|---|
 | 新聞拆解 | 每日新聞選文；拆文章結構、產業訊號與可重用判斷模型 | [最新 2026-07-19](./新聞拆解/2026/2026-07-19/README.md)｜[2026 年索引](./新聞拆解/2026/README.md) |
 | 文章拆解 | 非每日新聞的長文、官方文件、技術文件、專題文章 | [最新 2026-07-09](./文章拆解/2026/2026-07-09/README.md)｜[文章拆解索引](./文章拆解/README.md)｜[2026 年索引](./文章拆解/2026/README.md) |
-| 論文拆解 | arXiv / 研究論文的有限閱讀筆記，預設標示閱讀邊界 | [最新 2026-07-17](./論文拆解/2026/2026-07-17/README.md)｜[論文拆解索引](./論文拆解/README.md) |
+| 論文拆解 | arXiv / 研究論文的有限閱讀筆記，預設標示閱讀邊界 | [最新 2026-07-19](./論文拆解/2026/2026-07-19/README.md)｜[論文拆解索引](./論文拆解/README.md) |
 | 其他筆記 | 工具專欄、專案觀察、公司資料重建、repo 稽核等非典型研究 | [最新 2026-07-09](./其他/2026/2026-07-09/README.md)｜[其他筆記索引](./其他/README.md)｜[2026 年索引](./其他/2026/README.md) |
 | 專題討論 | 跨多篇材料累積的主題專欄與知識地圖 | [專題討論索引](./專題討論/README.md)｜[AI Real Economy](./專題討論/AI-Real-Economy/README.md)｜[LLM Prompt Interface](./專題討論/LLM-Prompt-Interface/README.md)｜[Algorithmic Trading](./專題討論/Algorithmic-Trading/README.md) |
 | 思考模型 | 從多篇筆記抽象出來的判斷框架與檢查清單 | [思考模型索引](./思考模型/README.md) |
@@ -36,6 +36,7 @@
 
 ### 論文 / 專題
 
+- [2026-07-19 論文](./論文拆解/2026/2026-07-19/README.md)：[RoboTTT](./論文拆解/2026/2026-07-19/01-robott-context-scaling-robot-policies.md)、[MEMORA](./論文拆解/2026/2026-07-19/02-memora-embodied-action-memory.md)
 - [2026-07-17 論文](./論文拆解/2026/2026-07-17/README.md)：[REAL](./論文拆解/2026/2026-07-17/01-real-open-world-mobile-manipulation.md)、[Anchor-Align](./論文拆解/2026/2026-07-17/02-anchor-align-vla-finetuning.md)
 - [2026-07-16 論文](./論文拆解/2026/2026-07-16/README.md)：[PhysClaw-0](./論文拆解/2026/2026-07-16/01-physclaw-0-language-corrections.md)、[Semantic Anchoring](./論文拆解/2026/2026-07-16/02-semantic-anchoring-action-representations.md)
 - [2026-07-15 論文](./論文拆解/2026/2026-07-15/README.md)：[VistaVLA](./論文拆解/2026/2026-07-15/01-vistavla-3d-gaussian-grounded-vla.md)、[Jetson-PI](./論文拆解/2026/2026-07-15/02-jetson-pi-onboard-real-time-vla.md)
@@ -49,7 +50,7 @@
 - **AI 熱潮的成本傳導**：[台積電法說會與 AI 資本支出](./新聞拆解/2026/2026-07-17/01-台積電法說會-ai需求與資本支出.md)、[ASML 漲價與台積電議價](./新聞拆解/2026/2026-07-16/01-asml漲價台積電拒買單.md)、[台積電成熟製程漲價](./新聞拆解/2026/2026-07-15/01-台積電成熟製程漲價.md)
 - **前沿模型安全、治理與技術主權**：[TAIDE 語言主權](./新聞拆解/2026/2026-07-17/02-taide本土生成式ai語言主權.md)、[GPT-Red 自動化紅隊](./新聞拆解/2026/2026-07-16/04-gpt-red自動化紅隊.md)、[AI 風險分類框架](./新聞拆解/2026/2026-07-11/02-ai風險分類框架.md)
 - **半導體供應鏈底層瓶頸**：[AI 光收發模組瓶頸](./新聞拆解/2026/2026-07-19/02-ai光收發模組瓶頸.md)、[中國稀土管制氧化釔價差](./新聞拆解/2026/2026-07-19/03-中國稀土管制氧化釔價差.md)、[中國成熟製程代工崛起](./新聞拆解/2026/2026-07-16/03-中國成熟製程代工崛起.md)、[先進封裝成 AI 咽喉](./新聞拆解/2026/2026-06-28/01-先進封裝成ai咽喉.md)
-- **Physical AI / 機器人系統堆疊**：[REAL](./論文拆解/2026/2026-07-17/01-real-open-world-mobile-manipulation.md)、[Anchor-Align](./論文拆解/2026/2026-07-17/02-anchor-align-vla-finetuning.md)、[英偉達 / 豐田 Physical AI](./新聞拆解/2026/2026-07-17/03-英偉達豐田woven-city物理ai.md)、[PhysClaw-0](./論文拆解/2026/2026-07-16/01-physclaw-0-language-corrections.md)
+- **Physical AI / 機器人系統堆疊**：[RoboTTT](./論文拆解/2026/2026-07-19/01-robott-context-scaling-robot-policies.md)、[MEMORA](./論文拆解/2026/2026-07-19/02-memora-embodied-action-memory.md)、[REAL](./論文拆解/2026/2026-07-17/01-real-open-world-mobile-manipulation.md)、[Anchor-Align](./論文拆解/2026/2026-07-17/02-anchor-align-vla-finetuning.md)、[英偉達 / 豐田 Physical AI](./新聞拆解/2026/2026-07-17/03-英偉達豐田woven-city物理ai.md)
 - **政策補貼與資源分配**：[青安 3.0 補貼篩選](./新聞拆解/2026/2026-07-16/02-青安3補貼篩選.md)、[社會科學的第一性原理](./思考模型/社會科學的第一性原理.md)
 
 ## 調閱方式

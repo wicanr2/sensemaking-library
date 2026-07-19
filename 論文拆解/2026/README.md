@@ -4,6 +4,7 @@
 
 ## 日期索引
 
+- [2026-07-19｜RoboTTT；MEMORA](./2026-07-19/README.md)
 - [2026-07-17｜REAL；Anchor-Align](./2026-07-17/README.md)
 - [2026-07-16｜PhysClaw-0；Semantic Anchoring](./2026-07-16/README.md)
 - [2026-07-15｜VistaVLA；Jetson-PI](./2026-07-15/README.md)
