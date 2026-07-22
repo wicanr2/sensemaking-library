@@ -4,6 +4,7 @@
 
 ## 日期索引
 
+- [2026-07-22｜FM-VLA；POT-VLA](./2026-07-22/README.md)
 - [2026-07-20｜LifelongVLA；Reflex](./2026-07-20/README.md)
 - [2026-07-19｜RoboTTT；MEMORA](./2026-07-19/README.md)
 - [2026-07-17｜REAL；Anchor-Align](./2026-07-17/README.md)
